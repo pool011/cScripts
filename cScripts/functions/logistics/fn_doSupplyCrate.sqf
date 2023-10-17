@@ -13,7 +13,7 @@
  * [this,1] call cScripts_fnc_doSupplyCrate;
  */
 
-if (!isServer) exitWith {};
+if (!isServer || !hasInterface) exitWith {};
 
 params [["_crate", objNull, [objNull]]];
 
@@ -23,13 +23,13 @@ clearItemCargoGlobal _crate;
 clearBackpackCargoGlobal _crate;
 
 // Add items from logistics database entry
-if (isServer) then {
-    [{!isNil{EGVAR(DATABASE,DONE)} && EGVAR(DATABASE,DONE);}, {
-        _this params ["_crate"];
-        private _container = GET_CONTAINER(crate_resupply_general);
-        [_crate, _container] call FUNC(addCargo);
+
+[{!isNil{EGVAR(DATABASE,DONE)} && EGVAR(DATABASE,DONE);}, {
+    _this params ["_crate"];
+    private _container = GET_CONTAINER(crate_resupply_general);
+    [_crate, _container] call FUNC(addCargo);
 }, [_crate, _quickSelectScale]] call CBA_fnc_waitUntilAndExecute;
-};
+
 
 // Change ace logistics size of crate
 [_crate, 1] remoteExec ["ace_cargo_fnc_setSize",0,true];
