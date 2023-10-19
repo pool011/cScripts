@@ -50,6 +50,7 @@ force force ace_arsenal_enableIdentityTabs = true;
 //ace_arsenal_loadoutsSaveFace = false;
 //ace_arsenal_loadoutsSaveInsignia = true;
 //ace_arsenal_loadoutsSaveVoice = false;
+//ace_arsenal_defaultToFavorites = true;
 
 // ACE Artillery
 force force ace_artillerytables_advancedCorrections = false;
@@ -488,7 +489,7 @@ force force ace_medical_engine_damagePassThroughEffect = 0;
 //force force ace_medical_gui_showDamageEntry = false;
 force force ace_medical_gui_tourniquetWarning = true;
 force force ace_medical_painUnconsciousThreshold = 0.5;
-force force ace_medical_treatment_allowGraveDigging = false;
+force force ace_medical_treatment_allowGraveDigging = 0;
 force force ace_medical_treatment_bandageEffectiveness = 1;
 force force ace_medical_treatment_bandageRollover = true;
 force force ace_medical_treartment_graveDiggingMarker = false;
