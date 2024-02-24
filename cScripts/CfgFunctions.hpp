@@ -162,6 +162,10 @@ class cScripts {
         
         class getAttendance {};
         class getServerMetrics {};
+
+        // Crate Spawner
+        class addCrateSpawner {};
+        class setupCrateList {};
     };
     class vehicle {
         file = "cScripts\functions\vehicle";
