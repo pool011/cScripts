@@ -394,11 +394,11 @@ force force ace_nametags_playerNamesViewDistance = 5;
 //ace_nametags_tagSize = 2;
 
 // ACE Nightvision
-force force ace_nightvision_aimDownSightsBlur = 1;
+force force ace_nightvision_aimDownSightsBlur = 0.05;
 force force ace_nightvision_disableNVGsWithSights = false;
-force force ace_nightvision_effectScaling = 1;
-force force ace_nightvision_fogScaling = 1;
-force force ace_nightvision_noiseScaling = 1;
+force force ace_nightvision_effectScaling = 0.151011;
+force force ace_nightvision_fogScaling = 0.155;
+force force ace_nightvision_noiseScaling = 0.171301;
 force force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
@@ -503,10 +503,10 @@ force force ace_switchunits_switchToIndependent = false;
 force force ace_switchunits_switchToWest = false;
 
 // ACE Trenches
-//ace_trenches_bigEnvelopeDigDuration = 25;
-//ace_trenches_bigEnvelopeRemoveDuration = 15;
-//ace_trenches_smallEnvelopeDigDuration = 20;
-//ace_trenches_smallEnvelopeRemoveDuration = 12;
+force force ace_trenches_bigEnvelopeDigDuration = 25;
+force force ace_trenches_bigEnvelopeRemoveDuration = 15;
+force force ace_trenches_smallEnvelopeDigDuration = 20;
+force force ace_trenches_smallEnvelopeRemoveDuration = 12;
 
 // ACE Uncategorized
 force force ace_fastroping_autoAddFRIES = false;
