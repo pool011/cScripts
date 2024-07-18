@@ -30,9 +30,11 @@ _vehicle setVariable [QEGVAR(VehicleFunc,Functions), true];
 if (_vehicle iskindOf "Heli_Transport_01_base_F") then {
     [_vehicle] call FUNC(addGetOutHelo);
     [_vehicle] call FUNC(addEscapeWreck);
+    [_vehicle, 1800, 90] call FUNC(addHaloJump);
 };
 
 if (_vehicle iskindOf "RHS_UH60_Base") then {
+    
     switch (_vehicleType) do {
         case "RHS_UH60M_MEV2_d";
         case "RHS_UH60M_MEV_d";
@@ -65,6 +67,7 @@ if (_vehicle iskindOf "RHS_Mi8_base") then {
 if (_vehicle iskindOf "Heli_Transport_02_base_F") then {
     [_vehicle] call FUNC(addLineJump);
     [_vehicle] call FUNC(addEscapeWreck);
+    [_vehicle, 1800, 90] call FUNC(addHaloJump);
 };
 
 if (_vehicle iskindOf "RHS_C130J_Base") then {
@@ -97,6 +100,7 @@ if (_vehicle iskindOf "vtx_MH60M") then {
 if (_vehicle iskindOf "TF373_SOAR_MH47G_Base") then {
     [_vehicle] call FUNC(addLineJump);
     [_vehicle] call FUNC(addEscapeWreck);
+    [_vehicle, 1800, 90] call FUNC(addHaloJump);
 };
 
 
